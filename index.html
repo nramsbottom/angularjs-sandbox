@@ -6,16 +6,20 @@
 </head>
 <body>
 
-	<div ng-app="oneApp">
-		<div ng-controller="helloWorld">
-			<p>The name is <span ng-bind="fullName()"></span></p>
+	<div>
+
+		<div id="oneApp">
+			<div ng-controller="helloWorld">
+				<p>The name is <span ng-bind="fullName()"></span></p>
+			</div>
 		</div>
-	</div>
 	
-	<div ng-app="twoApp">
-		<div ng-controller="helloWorld">
-			<p>The name is <span ng-bind="fullName()"></span></p>
+		<div id="twoApp">
+			<div ng-controller="helloWorld">
+				<p>The name is <span ng-bind="fullName()"></span></p>
+			</div>
 		</div>
+
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -26,5 +30,7 @@
 	<script src="modules/two/app.js"></script>
 	<script src="modules/two/controllers/helloWorld.js"></script>
 	
+	<script src="app.js"></script>
+
 </body>
 </html>
